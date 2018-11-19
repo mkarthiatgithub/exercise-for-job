@@ -19,18 +19,16 @@ public interface FileService {
         return Arrays.asList(SupportedMIME.values());
     }
 
-    List<vehicleDetail> getVechicleDetails(SupportedMIME supportedMIME, String dirName);
+    List<VehicleDetail> getVechicleDetails(String dirName);
 
-    List<FileInformation> getFileInfo(SupportedMIME supportedMIME, String dirName);
+    List<FileInformation> getFileInfo( String dirName);
 
     class SupportedFiles {
-        private static FileService fileService;
+
         private final static MimetypesFileTypeMap mimeTypes = new MimetypesFileTypeMap();
 
         public static List<FileInformation> setListOfSupportedFiles(String directoryName, SupportedMIME supportedExtn) {
-            if (!fileService.getSupportedMIME().contains(supportedExtn)) {
-                throw new RuntimeException("Non supported Extn");
-            }
+
             List<FileInformation> supportedFiles = new ArrayList<>();
             if (getFiles(directoryName).size() > 0)
                 supportedFiles.addAll(getFiles(directoryName));

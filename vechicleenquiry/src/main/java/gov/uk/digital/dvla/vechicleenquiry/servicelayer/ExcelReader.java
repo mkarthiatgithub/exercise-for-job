@@ -11,6 +11,8 @@ import java.util.List;
 import static gov.uk.digital.dvla.vechicleenquiry.servicelayer.FileService.SupportedFiles.setListOfSupportedFiles;
 
 public class ExcelReader implements FileService {
+
+    SupportedMIME supportedMIME = SupportedMIME.XLS;
     private static final Logger logger = LoggerFactory.getLogger(ServiceReader.class);
     private static XSSFSheet ExcelSheet;
 
@@ -18,23 +20,23 @@ public class ExcelReader implements FileService {
 
 
     @Override
-    public List<FileInformation> getFileInfo(SupportedMIME supportedMIME, String dirName) {
+    public List<FileInformation> getFileInfo(String dirName) {
         return setListOfSupportedFiles(dirName, supportedMIME);
     }
 
     @Override
-    public List<vehicleDetail> getVechicleDetails(SupportedMIME supportedMIME, String dirName) {
-        List<vehicleDetail> vehicleDetails = null;
-        List<FileInformation> fileInformationList = getFileInfo(supportedMIME, dirName);
+    public List<VehicleDetail> getVechicleDetails(String dirName) {
+        List<VehicleDetail> VehicleDetails = null;
+        List<FileInformation> fileInformationList = getFileInfo(dirName);
         for (FileInformation file : fileInformationList) {
-            vehicleDetails = readAllRowsExcel(file.getFileName());
+            VehicleDetails = readAllRowsExcel(file.getFileName());
         }
-        return vehicleDetails;
+        return VehicleDetails;
     }
 
-    public List<vehicleDetail> readAllRowsExcel(String filePath) {
+    public List<VehicleDetail> readAllRowsExcel(String filePath) {
         String sheetName = "Sheet1";
-        List<vehicleDetail> vehicleDetails = null;
+        List<VehicleDetail> VehicleDetails = null;
         int rows = 0;
         try {
             FileInputStream ExcelFile = new FileInputStream(filePath);
@@ -46,14 +48,14 @@ public class ExcelReader implements FileService {
         }
 
         for (int rowNum = 0; rowNum < rows; rowNum++) {
-            vehicleDetails.add(readExcelRow(filePath, sheetName, rowNum));
+            VehicleDetails.add(readExcelRow(filePath, sheetName, rowNum));
 
         }
-        return vehicleDetails;
+        return VehicleDetails;
     }
 
-    private vehicleDetail readExcelRow(String filePath, String sheetName, int rowNum) {
-        vehicleDetail vehicle = null;
+    private VehicleDetail readExcelRow(String filePath, String sheetName, int rowNum) {
+        VehicleDetail vehicle = null;
         String[] vehicleData = new String[3];
         try {
             FileInputStream ExcelFile = new FileInputStream(filePath);

@@ -1,8 +1,8 @@
+gov\uk\digital\dvla\vechicleenquiry\servicelayer\VehicleDetail.class
 gov\uk\digital\dvla\vechicleenquiry\servicelayer\ServiceReader.class
 gov\uk\digital\dvla\vechicleenquiry\servicelayer\ExcelReader.class
 gov\uk\digital\dvla\vechicleenquiry\servicelayer\FileInformation.class
 gov\uk\digital\dvla\vechicleenquiry\servicelayer\SupportedMIME.class
-gov\uk\digital\dvla\vechicleenquiry\servicelayer\vehicleDetail.class
 gov\uk\digital\dvla\vechicleenquiry\servicelayer\FileService.class
 gov\uk\digital\dvla\vechicleenquiry\servicelayer\CSVReader.class
 gov\uk\digital\dvla\vechicleenquiry\servicelayer\FileService$SupportedFiles.class

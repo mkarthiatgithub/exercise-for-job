@@ -1,12 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: runsupport.RunCukesTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 10.392 sec <<< FAILURE!
-First Test(DVLA Feature)  Time elapsed: 9.079 sec  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 11.875 sec <<< FAILURE!
+First Test(DVLA Feature)  Time elapsed: 10.562 sec  <<< ERROR!
 java.lang.NullPointerException
 	at gov.uk.digital.dvla.vechicleenquiry.servicelayer.FileService$SupportedFiles.setListOfSupportedFiles(FileService.java:31)
 	at gov.uk.digital.dvla.vechicleenquiry.servicelayer.CSVReader.getFileInfo(CSVReader.java:36)
 	at gov.uk.digital.dvla.vechicleenquiry.servicelayer.CSVReader.getVechicleDetails(CSVReader.java:16)
-	at steps.DVLAVechicleSteps.amOnDVLASite(DVLAVechicleSteps.java:33)
+	at steps.DVLAVechicleSteps.amOnDVLASite(DVLAVechicleSteps.java:34)
 	at ✽.Am on DVLA Site(features/DVLA.feature:5)
 

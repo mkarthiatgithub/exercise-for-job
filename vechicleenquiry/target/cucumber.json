@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 7943326115,
+              "duration": 9425087964,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 1076844878,
+              "duration": 1083796212,
               "status": "passed"
             },
             "match": {
@@ -34,8 +34,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "java.lang.NullPointerException\r\n\tat gov.uk.digital.dvla.vechicleenquiry.servicelayer.FileService$SupportedFiles.setListOfSupportedFiles(FileService.java:31)\r\n\tat gov.uk.digital.dvla.vechicleenquiry.servicelayer.CSVReader.getFileInfo(CSVReader.java:36)\r\n\tat gov.uk.digital.dvla.vechicleenquiry.servicelayer.CSVReader.getVechicleDetails(CSVReader.java:16)\r\n\tat steps.DVLAVechicleSteps.amOnDVLASite(DVLAVechicleSteps.java:33)\r\n\tat ✽.Am on DVLA Site(features/DVLA.feature:5)\r\n",
-              "duration": 30067078,
+              "error_message": "java.lang.NullPointerException\r\n\tat gov.uk.digital.dvla.vechicleenquiry.servicelayer.FileService$SupportedFiles.setListOfSupportedFiles(FileService.java:31)\r\n\tat gov.uk.digital.dvla.vechicleenquiry.servicelayer.CSVReader.getFileInfo(CSVReader.java:36)\r\n\tat gov.uk.digital.dvla.vechicleenquiry.servicelayer.CSVReader.getVechicleDetails(CSVReader.java:16)\r\n\tat steps.DVLAVechicleSteps.amOnDVLASite(DVLAVechicleSteps.java:34)\r\n\tat ✽.Am on DVLA Site(features/DVLA.feature:5)\r\n",
+              "duration": 26409930,
               "status": "failed"
             },
             "line": 5,

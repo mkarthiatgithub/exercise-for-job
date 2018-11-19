@@ -36,7 +36,7 @@ formatter.match({
   "location": "DVLAVechicleSteps.amOnDVLASite()"
 });
 formatter.result({
-  "error_message": "java.lang.NullPointerException\r\n\tat gov.uk.digital.dvla.vechicleenquiry.servicelayer.FileService$SupportedFiles.setListOfSupportedFiles(FileService.java:31)\r\n\tat gov.uk.digital.dvla.vechicleenquiry.servicelayer.CSVReader.getFileInfo(CSVReader.java:36)\r\n\tat gov.uk.digital.dvla.vechicleenquiry.servicelayer.CSVReader.getVechicleDetails(CSVReader.java:16)\r\n\tat steps.DVLAVechicleSteps.amOnDVLASite(DVLAVechicleSteps.java:33)\r\n\tat ✽.Am on DVLA Site(features/DVLA.feature:5)\r\n",
+  "error_message": "java.lang.NullPointerException\r\n\tat gov.uk.digital.dvla.vechicleenquiry.servicelayer.FileService$SupportedFiles.setListOfSupportedFiles(FileService.java:31)\r\n\tat gov.uk.digital.dvla.vechicleenquiry.servicelayer.CSVReader.getFileInfo(CSVReader.java:36)\r\n\tat gov.uk.digital.dvla.vechicleenquiry.servicelayer.CSVReader.getVechicleDetails(CSVReader.java:16)\r\n\tat steps.DVLAVechicleSteps.amOnDVLASite(DVLAVechicleSteps.java:34)\r\n\tat ✽.Am on DVLA Site(features/DVLA.feature:5)\r\n",
   "status": "failed"
 });
 formatter.after({

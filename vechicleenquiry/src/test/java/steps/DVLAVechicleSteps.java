@@ -30,7 +30,8 @@ public class DVLAVechicleSteps extends DriverFactory {
 
     @Given("^Am on DVLA Site$")
     public void amOnDVLASite() {
-        List<vehicleDetail> vechicleDetails1 = service.getVechicleDetails(SupportedMIME.CSV, "src/main/resources/TestVehicle");
+
+        List<VehicleDetail> vechicleDetails1 = service.getVechicleDetails("src/main/resources/TestVehicle");
 
         driver.get(PAGE_URL);
         PageFactory.initElements(driver, this);

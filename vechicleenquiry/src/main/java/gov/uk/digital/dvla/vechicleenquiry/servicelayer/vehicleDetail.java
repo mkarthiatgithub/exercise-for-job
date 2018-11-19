@@ -1,11 +1,11 @@
 package gov.uk.digital.dvla.vechicleenquiry.servicelayer;
 
-public class vehicleDetail {
+public class VehicleDetail {
     private String regNumber;
     private String color;
     private String make;
 
-    public vehicleDetail(String regNumber, String color, String make) {
+    public VehicleDetail(String regNumber, String color, String make) {
         this.regNumber = regNumber;
         this.color = color;
         this.make = make;
