@@ -1,6 +1,7 @@
 package steps;
 
 import com.google.inject.Inject;
+import com.google.inject.name.Named;
 import cucumber.api.java.en.Given;
 import cucumber.runtime.java.guice.ScenarioScoped;
 import gov.uk.digital.dvla.vechicleenquiry.servicelayer.*;
@@ -17,11 +18,14 @@ import java.util.List;
 @ScenarioScoped
 public class DVLAVechicleSteps extends DriverFactory {
     private ServiceReader serviceReader;
-    private FileService service;
+    private FileService csvService;
+    private FileService excelService;
 
     @Inject
-    public DVLAVechicleSteps(CSVReader fileService) {
-        this.service = fileService;
+    public DVLAVechicleSteps( CSVReader csvReader,
+                              ExcelReader excelReader) {
+        this.csvService = csvReader;
+        this.excelService = excelReader;
     }
 
     private String PAGE_URL = "https://www.gov.uk/get-vehicle-information-from-dvla";
@@ -31,7 +35,8 @@ public class DVLAVechicleSteps extends DriverFactory {
     @Given("^Am on DVLA Site$")
     public void amOnDVLASite() {
 
-        List<VehicleDetail> vechicleDetails1 = service.getVechicleDetails("src/main/resources/TestVehicle");
+        List<VehicleDetail> vechicleDetails1 = csvService.getVechicleDetails("src/main/resources/TestVehicle");
+        List<VehicleDetail> vechicleDetails12 = excelService.getVechicleDetails("src/main/resources/TestVehicle");
 
         driver.get(PAGE_URL);
         PageFactory.initElements(driver, this);
@@ -41,15 +46,13 @@ public class DVLAVechicleSteps extends DriverFactory {
 
         VehicleEnquiryPage vehicleEnquiryPage = new VehicleEnquiryPage(driver);
         VehicleDetailsPage vehicleDetailsPage = new VehicleDetailsPage(driver);
-        List<String[]> vehicleList = new ArrayList<>();
-        String[] vechicleDetails = {"DA05BYP", "VAUXHALL", "BLUE", "VAUXALL"};
-        vehicleList.add(vechicleDetails);
-        for (String[] Info : vehicleList) {
-            vehicleEnquiryPage.enterRegNumber(Info[0]);
+
+        for (VehicleDetail singleCar : vechicleDetails1) {
+            vehicleEnquiryPage.enterRegNumber(singleCar.getRegNumber());
             vehicleEnquiryPage.clickContinue();
-            vehicleDetailsPage.validate(Info[1], Info[2]);
+            vehicleDetailsPage.validate(singleCar.getMake(), singleCar.getColor());
             vehicleDetailsPage.searchAgain();
         }
-        vehicleList.size();
+
     }
 }

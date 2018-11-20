@@ -5,7 +5,7 @@ public class VehicleDetail {
     private String color;
     private String make;
 
-    public VehicleDetail(String regNumber, String color, String make) {
+    public VehicleDetail(String regNumber, String make, String color) {
         this.regNumber = regNumber;
         this.color = color;
         this.make = make;

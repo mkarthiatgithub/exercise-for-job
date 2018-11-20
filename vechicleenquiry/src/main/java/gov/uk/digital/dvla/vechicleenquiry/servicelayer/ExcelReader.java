@@ -12,8 +12,8 @@ import static gov.uk.digital.dvla.vechicleenquiry.servicelayer.FileService.Suppo
 
 public class ExcelReader implements FileService {
 
-    SupportedMIME supportedMIME = SupportedMIME.XLS;
-    private static final Logger logger = LoggerFactory.getLogger(ServiceReader.class);
+    private final SupportedMIME supportedMIME = SupportedMIME.XLS;
+    private static final Logger logger = LoggerFactory.getLogger(ExcelReader.class);
     private static XSSFSheet ExcelSheet;
 
     private static XSSFWorkbook ExcelWBook;

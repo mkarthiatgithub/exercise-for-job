@@ -21,7 +21,7 @@ public interface FileService {
 
     List<VehicleDetail> getVechicleDetails(String dirName);
 
-    List<FileInformation> getFileInfo( String dirName);
+    List<FileInformation> getFileInfo(String dirName);
 
     class SupportedFiles {
 
@@ -35,7 +35,7 @@ public interface FileService {
             return supportedFiles;
         }
 
-         static List<FileInformation> getFiles(String directoryName) {
+        static List<FileInformation> getFiles(String directoryName) {
             List<FileInformation> FileInfoList = new ArrayList<>();
             File directory = new File(directoryName);
             File[] listFiles = directory.listFiles();
@@ -44,6 +44,9 @@ public interface FileService {
             }
             for (File file : listFiles) {
                 String extension = getExtensionByApacheCommonLib(file.getName());
+                if (!SupportedMIME.CSV.toString().equalsIgnoreCase(extension)) {
+                    continue;
+                }
                 FileInformation fileInformation = new FileInformation();
                 fileInformation.setFileName(file.getName());
                 fileInformation.setExt(extension);
