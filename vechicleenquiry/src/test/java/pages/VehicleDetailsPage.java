@@ -34,8 +34,8 @@ public class VehicleDetailsPage {
 
     //Actions
     public void validate(String make, String color) {
-        assertEquals("Make doesn't match", make, makeElement.getText());
-        assertEquals("Color doesn't match", color, colorElement.getText());
+        assertEquals("Make doesn't match", make.toLowerCase(), makeElement.getText().toLowerCase());
+        assertEquals("Color doesn't match", color.toLowerCase(), colorElement.getText().toLowerCase());
     }
 
     public void searchAgain() {

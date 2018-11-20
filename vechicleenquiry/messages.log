@@ -5,3 +5,8 @@
 2018-11-19 23:53:26 ERROR ExcelReader:47 - java.io.FileNotFoundException: vehicledetails.csv (The system cannot find the file specified)
 2018-11-19 23:54:01 ERROR ExcelReader:47 - java.io.FileNotFoundException: vehicledetails.csv (The system cannot find the file specified)
 2018-11-19 23:55:05 ERROR ExcelReader:47 - java.io.FileNotFoundException: vehicledetails.csv (The system cannot find the file specified)
+2018-11-20 00:14:05 ERROR ExcelReader:47 - java.io.FileNotFoundException: test-vehicle.xlsx (The system cannot find the file specified)
+2018-11-20 00:17:15 ERROR ExcelReader:47 - java.io.FileNotFoundException: test-vehicle.xlsx (The system cannot find the file specified)
+2018-11-20 00:22:09 ERROR ExcelReader:47 - java.io.FileNotFoundException: test-vehicle.xlsx (The system cannot find the file specified)
+2018-11-20 00:22:52 ERROR ExcelReader:74 - java.lang.NullPointerException
+2018-11-20 00:26:02 ERROR ExcelReader:75 - 

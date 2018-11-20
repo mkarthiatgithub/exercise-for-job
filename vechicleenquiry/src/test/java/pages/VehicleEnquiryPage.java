@@ -31,6 +31,7 @@ public class VehicleEnquiryPage {
     }
 
     public void enterRegNumber(String regNumber) {
+        log.info("Entering the car details {}" + regNumber);
         regNo.sendKeys(regNumber);
     }
 

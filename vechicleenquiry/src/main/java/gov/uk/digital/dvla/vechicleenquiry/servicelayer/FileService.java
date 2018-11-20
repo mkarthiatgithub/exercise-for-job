@@ -30,12 +30,12 @@ public interface FileService {
         public static List<FileInformation> setListOfSupportedFiles(String directoryName, SupportedMIME supportedExtn) {
 
             List<FileInformation> supportedFiles = new ArrayList<>();
-            if (getFiles(directoryName).size() > 0)
-                supportedFiles.addAll(getFiles(directoryName));
+            if (getFiles(directoryName,supportedExtn).size() > 0)
+                supportedFiles.addAll(getFiles(directoryName,supportedExtn));
             return supportedFiles;
         }
 
-        static List<FileInformation> getFiles(String directoryName) {
+        static List<FileInformation> getFiles(String directoryName ,SupportedMIME supportedExtn) {
             List<FileInformation> FileInfoList = new ArrayList<>();
             File directory = new File(directoryName);
             File[] listFiles = directory.listFiles();
@@ -44,7 +44,7 @@ public interface FileService {
             }
             for (File file : listFiles) {
                 String extension = getExtensionByApacheCommonLib(file.getName());
-                if (!SupportedMIME.CSV.toString().equalsIgnoreCase(extension)) {
+                if (!supportedExtn.toString().equalsIgnoreCase(extension)) {
                     continue;
                 }
                 FileInformation fileInformation = new FileInformation();

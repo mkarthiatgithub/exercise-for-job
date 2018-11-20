@@ -20,10 +20,10 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="4" />
-          <entry key="csv" value="3" />
+          <entry key="class" value="8" />
+          <entry key="csv" value="5" />
           <entry key="feature" value="2" />
-          <entry key="java" value="156" />
+          <entry key="java" value="167" />
           <entry key="jpg" value="2" />
           <entry key="png" value="1" />
           <entry key="properties" value="5" />
@@ -33,11 +33,11 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="4" />
-          <entry key="CSV" value="3" />
+          <entry key="CLASS" value="8" />
+          <entry key="CSV" value="5" />
           <entry key="Cucumber" value="2" />
           <entry key="Image" value="3" />
-          <entry key="JAVA" value="156" />
+          <entry key="JAVA" value="167" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="5" />
           <entry key="XML" value="2" />
@@ -45,17 +45,17 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="csv" value="12" />
+          <entry key="csv" value="16" />
           <entry key="dummy" value="32" />
-          <entry key="java" value="2559" />
+          <entry key="java" value="2762" />
           <entry key="txt" value="13" />
           <entry key="xml" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSV" value="12" />
-          <entry key="JAVA" value="2559" />
+          <entry key="CSV" value="16" />
+          <entry key="JAVA" value="2762" />
           <entry key="PLAIN_TEXT" value="45" />
           <entry key="XML" value="40" />
         </counts>
@@ -63,7 +63,21 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pages/VehicleEnquiryPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="409">
+              <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
+              <folding>
+                <element signature="e#1135#1136#0" expanded="true" />
+                <element signature="e#1173#1174#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -90,14 +104,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/test/java/steps/toolsQASwitchSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/VehicleDetailsPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/GetVehicleInfoPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/VehicleEnquiryPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/util/PropertyReader.java" />
         <option value="$PROJECT_DIR$/src/test/java/runsupport/DriverFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/runsupport/Hooks.java" />
         <option value="$PROJECT_DIR$/src/main/java/SupportedMIME.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gov/uk/digital/dvla/vechicleenquiry/servicelayer/SupportedMIME.java" />
         <option value="$PROJECT_DIR$/src/main/java/vechicleDetails.java" />
         <option value="$PROJECT_DIR$/src/main/java/gov/uk/digital/dvla/vechicleenquiry/servicelayer/vechicleDetails.java" />
         <option value="$PROJECT_DIR$/src/main/java/gov/uk/digital/dvla/vechicleenquiry/servicelayer/vechileDetails.java" />
@@ -113,16 +124,19 @@
         <option value="$PROJECT_DIR$/src/main/java/gov/uk/digital/dvla/vechicleenquiry/servicelayer/SupportedFiles.java" />
         <option value="$PROJECT_DIR$/src/test/java/runsupport/myProvider.java" />
         <option value="$PROJECT_DIR$/src/main/java/gov/uk/digital/dvla/vechicleenquiry/servicelayer/ServiceReader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gov/uk/digital/dvla/vechicleenquiry/servicelayer/ExcelReader.java" />
         <option value="$PROJECT_DIR$/src/test/java/runsupport/MyProvider.java" />
         <option value="$PROJECT_DIR$/src/test/java/runsupport/MyModule.java" />
         <option value="$PROJECT_DIR$/src/test/java/runsupport/MyXLProvider.java" />
         <option value="$PROJECT_DIR$/src/test/java/runsupport/MyCSVProvider.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gov/uk/digital/dvla/vechicleenquiry/servicelayer/FileService.java" />
         <option value="$PROJECT_DIR$/src/main/java/gov/uk/digital/dvla/vechicleenquiry/servicelayer/CSVReader.java" />
-        <option value="$PROJECT_DIR$/src/test/java/steps/DVLAVechicleSteps.java" />
         <option value="$PROJECT_DIR$/src/main/java/gov/uk/digital/dvla/vechicleenquiry/servicelayer/VehicleDetail.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gov/uk/digital/dvla/vechicleenquiry/servicelayer/FileService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gov/uk/digital/dvla/vechicleenquiry/servicelayer/SupportedMIME.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gov/uk/digital/dvla/vechicleenquiry/servicelayer/ExcelReader.java" />
+        <option value="$PROJECT_DIR$/src/test/java/steps/DVLAVechicleSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/VehicleDetailsPage.java" />
         <option value="$PROJECT_DIR$/src/main/resources/TestVehicle/vehicledetails.csv" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/VehicleEnquiryPage.java" />
       </list>
     </option>
   </component>
@@ -297,6 +311,41 @@
             <path>
               <item name="vechicleenquiry" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.poi:poi-ooxml:3.11" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="vechicleenquiry" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.poi:poi-ooxml:3.11" type="70bed36:NamedLibraryElementNode" />
+              <item name="poi-ooxml-3.11.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vechicleenquiry" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.poi:poi-ooxml:3.11" type="70bed36:NamedLibraryElementNode" />
+              <item name="poi-ooxml-3.11.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="poi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vechicleenquiry" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.poi:poi-ooxml:3.11" type="70bed36:NamedLibraryElementNode" />
+              <item name="poi-ooxml-3.11.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="poi" type="462c0819:PsiDirectoryNode" />
+              <item name="xssf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vechicleenquiry" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.poi:poi-ooxml:3.11" type="70bed36:NamedLibraryElementNode" />
+              <item name="poi-ooxml-3.11.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="poi" type="462c0819:PsiDirectoryNode" />
+              <item name="xssf" type="462c0819:PsiDirectoryNode" />
+              <item name="usermodel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vechicleenquiry" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
               <item name="Maven: org.seleniumhq.selenium:selenium-support:3.14.0" type="70bed36:NamedLibraryElementNode" />
             </path>
             <path>
@@ -338,7 +387,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542671837496" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542674609298" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -445,46 +494,47 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Feature__DVLA - 2018.11.19 at 23h 41m 03s.xml">
+    <history-entry file="Feature__DVLA - 2018.11.20 at 00h 17m 36s.xml">
       <configuration name="Feature: DVLA" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__DVLA - 2018.11.19 at 23h 41m 56s.xml">
+    <history-entry file="Feature__DVLA - 2018.11.20 at 00h 22m 09s.xml">
       <configuration name="Feature: DVLA" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__DVLA - 2018.11.19 at 23h 42m 45s.xml">
+    <history-entry file="Feature__DVLA - 2018.11.20 at 00h 22m 53s.xml">
       <configuration name="Feature: DVLA" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__DVLA - 2018.11.19 at 23h 43m 26s.xml">
+    <history-entry file="Feature__DVLA - 2018.11.20 at 00h 26m 04s.xml">
       <configuration name="Feature: DVLA" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__DVLA - 2018.11.19 at 23h 47m 34s.xml">
+    <history-entry file="Feature__DVLA - 2018.11.20 at 00h 29m 35s.xml">
       <configuration name="Feature: DVLA" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__DVLA - 2018.11.19 at 23h 49m 13s.xml">
+    <history-entry file="Feature__DVLA - 2018.11.20 at 00h 30m 05s.xml">
       <configuration name="Feature: DVLA" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__DVLA - 2018.11.19 at 23h 50m 37s.xml">
+    <history-entry file="Feature__DVLA - 2018.11.20 at 00h 31m 04s.xml">
       <configuration name="Feature: DVLA" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__DVLA - 2018.11.19 at 23h 53m 27s.xml">
+    <history-entry file="Feature__DVLA - 2018.11.20 at 00h 32m 05s.xml">
       <configuration name="Feature: DVLA" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__DVLA - 2018.11.19 at 23h 54m 31s.xml">
+    <history-entry file="Feature__DVLA - 2018.11.20 at 00h 33m 17s.xml">
       <configuration name="Feature: DVLA" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__DVLA - 2018.11.19 at 23h 55m 11s.xml">
+    <history-entry file="Feature__DVLA - 2018.11.20 at 00h 37m 23s.xml">
       <configuration name="Feature: DVLA" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28971255" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28971255" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" />
@@ -492,8 +542,8 @@
       <window_info anchor="bottom" id="Messages" weight="0.3295082" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.55573773" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.5147541" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5229508" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.43606558" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -501,7 +551,7 @@
       <window_info anchor="right" id="Theme Preview" />
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Maven Projects" visible="true" weight="0.32980332" />
+      <window_info anchor="right" id="Maven Projects" weight="0.32980332" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -512,16 +562,16 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.31467474" />
+      <window_info content_ui="combo" id="Project" order="5" weight="0.28971255" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="3" weight="0.3295082" />
       <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" weight="0.3295082" />
-      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.40655738" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.4557377" />
+      <window_info active="true" anchor="bottom" id="Find" order="5" visible="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.55573773" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.5147541" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" />
@@ -548,33 +598,33 @@
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/gov/uk/digital/dvla/vechicleenquiry/servicelayer/CSVReader.java</url>
-          <line>24</line>
+          <url>file://$PROJECT_DIR$/src/test/java/steps/DVLAVechicleSteps.java</url>
+          <line>51</line>
           <properties />
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/gov/uk/digital/dvla/vechicleenquiry/servicelayer/CSVReader.java</url>
-          <line>23</line>
-          <properties />
-          <option name="timeStamp" value="18" />
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/steps/DVLAVechicleSteps.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/gov/uk/digital/dvla/vechicleenquiry/servicelayer/ExcelReader.java</url>
+          <line>67</line>
+          <properties />
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/gov/uk/digital/dvla/vechicleenquiry/servicelayer/ExcelReader.java</url>
           <line>52</line>
           <properties />
-          <option name="timeStamp" value="19" />
+          <option name="timeStamp" value="43" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/Datatable_steps.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/RestDemoSteps.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/steps/MercuryToursSteps.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -615,19 +665,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="42" column="32" lean-forward="true" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/VehicleEnquiryPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-          <folding>
-            <element signature="e#1037#1038#0" expanded="true" />
-            <element signature="e#1087#1088#0" expanded="true" />
-            <element signature="e#1122#1123#0" expanded="true" />
-            <element signature="e#1160#1161#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -763,13 +800,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gov/uk/digital/dvla/vechicleenquiry/servicelayer/SupportedMIME.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/runsupport/RunCukesTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -792,25 +822,6 @@
             <element signature="e#367#368#0" expanded="true" />
             <element signature="e#413#414#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gov/uk/digital/dvla/vechicleenquiry/servicelayer/ExcelReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="15" column="76" selection-start-line="15" selection-start-column="76" selection-end-line="15" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#742#743#0" expanded="true" />
-            <element signature="e#812#813#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gov/uk/digital/dvla/vechicleenquiry/servicelayer/SupportedFiles.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -864,13 +875,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/1.3.2/commons-io-1.3.2.jar!/org/apache/commons/io/FilenameUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="320" selection-start-line="320" selection-end-line="320" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/TestVehicle/Morevehicledetails.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -882,30 +886,6 @@
             <element signature="e#272#273#0" expanded="true" />
             <element signature="e#301#302#0" expanded="true" />
             <element signature="e#332#333#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gov/uk/digital/dvla/vechicleenquiry/servicelayer/FileService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-191">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#504#505#0" expanded="true" />
-            <element signature="e#564#565#0" expanded="true" />
-            <element signature="e#2183#2184#0" expanded="true" />
-            <element signature="e#2250#2251#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gov/uk/digital/dvla/vechicleenquiry/servicelayer/CSVReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -922,16 +902,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/VehicleDetailsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.14.0/selenium-support-3.14.0.jar!/org/openqa/selenium/support/pagefactory/internal/LocatingElementHandler.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="89">
@@ -939,10 +909,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gov/uk/digital/dvla/vechicleenquiry/servicelayer/SupportedFiles.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gov/uk/digital/dvla/vechicleenquiry/servicelayer/SupportedMIME.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/1.3.2/commons-io-1.3.2.jar!/org/apache/commons/io/FilenameUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="321" selection-start-line="321" selection-end-line="321" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gov/uk/digital/dvla/vechicleenquiry/servicelayer/FileService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#504#505#0" expanded="true" />
+            <element signature="e#564#565#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.11/poi-ooxml-3.11.jar!/org/apache/poi/POIXMLDocumentPart.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.11/poi-ooxml-3.11.jar!/org/apache/poi/xssf/usermodel/XSSFSheet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="767" selection-start-line="767" selection-end-line="767" />
+          <folding>
+            <element signature="e#29655#29656#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gov/uk/digital/dvla/vechicleenquiry/servicelayer/CSVReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="15" column="63" lean-forward="true" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gov/uk/digital/dvla/vechicleenquiry/servicelayer/ExcelReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#754#755#0" expanded="true" />
+            <element signature="e#824#825#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/steps/DVLAVechicleSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        <state relative-caret-position="158">
+          <caret line="58" column="36" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -952,7 +994,28 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/TestVehicle/vehicledetails.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+          <caret line="1" column="26" lean-forward="true" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/VehicleDetailsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="29" column="49" lean-forward="true" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/VehicleEnquiryPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
+          <folding>
+            <element signature="e#1135#1136#0" expanded="true" />
+            <element signature="e#1173#1174#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

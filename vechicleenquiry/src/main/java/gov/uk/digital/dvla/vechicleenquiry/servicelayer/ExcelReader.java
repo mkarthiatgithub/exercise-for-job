@@ -6,13 +6,14 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.FileInputStream;
+import java.util.ArrayList;
 import java.util.List;
 
 import static gov.uk.digital.dvla.vechicleenquiry.servicelayer.FileService.SupportedFiles.setListOfSupportedFiles;
 
 public class ExcelReader implements FileService {
 
-    private final SupportedMIME supportedMIME = SupportedMIME.XLS;
+    private final SupportedMIME supportedMIME = SupportedMIME.XLSX;
     private static final Logger logger = LoggerFactory.getLogger(ExcelReader.class);
     private static XSSFSheet ExcelSheet;
 
@@ -29,14 +30,14 @@ public class ExcelReader implements FileService {
         List<VehicleDetail> VehicleDetails = null;
         List<FileInformation> fileInformationList = getFileInfo(dirName);
         for (FileInformation file : fileInformationList) {
-            VehicleDetails = readAllRowsExcel(file.getFileName());
+            VehicleDetails = readAllRowsExcel(dirName + "\\" + file.getFileName());
         }
         return VehicleDetails;
     }
 
     public List<VehicleDetail> readAllRowsExcel(String filePath) {
         String sheetName = "Sheet1";
-        List<VehicleDetail> VehicleDetails = null;
+        List<VehicleDetail> VehicleDetails = new ArrayList<>();
         int rows = 0;
         try {
             FileInputStream ExcelFile = new FileInputStream(filePath);
@@ -45,6 +46,7 @@ public class ExcelReader implements FileService {
             rows = ExcelSheet.getPhysicalNumberOfRows();
         } catch (Exception e) {
             logger.error(String.valueOf(e));
+            throw new RuntimeException("something Wrong " + e.getMessage());
         }
 
         for (int rowNum = 0; rowNum < rows; rowNum++) {
@@ -55,7 +57,6 @@ public class ExcelReader implements FileService {
     }
 
     private VehicleDetail readExcelRow(String filePath, String sheetName, int rowNum) {
-        VehicleDetail vehicle = null;
         String[] vehicleData = new String[3];
         try {
             FileInputStream ExcelFile = new FileInputStream(filePath);
@@ -64,14 +65,10 @@ public class ExcelReader implements FileService {
             vehicleData[0] = (ExcelSheet.getRow(rowNum).getCell(0).getStringCellValue());
             vehicleData[1] = (ExcelSheet.getRow(rowNum).getCell(1).getStringCellValue());
             vehicleData[2] = (ExcelSheet.getRow(rowNum).getCell(2).getStringCellValue());
-
-            vehicle.setRegNumber(vehicleData[0]);
-            vehicle.setMake(vehicleData[1]);
-            vehicle.setColor(vehicleData[2]);
-            return vehicle;
+            return new VehicleDetail(vehicleData[0],vehicleData[1],vehicleData[2]);
 
         } catch (Exception e) {
-            logger.error(String.valueOf(e));
+            logger.error(e.getMessage());
             throw new RuntimeException("Something Wrong " + e.getMessage());
         }
     }

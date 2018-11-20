@@ -22,8 +22,8 @@ public class DVLAVechicleSteps extends DriverFactory {
     private FileService excelService;
 
     @Inject
-    public DVLAVechicleSteps( CSVReader csvReader,
-                              ExcelReader excelReader) {
+    public DVLAVechicleSteps(CSVReader csvReader,
+                             ExcelReader excelReader) {
         this.csvService = csvReader;
         this.excelService = excelReader;
     }
@@ -34,8 +34,7 @@ public class DVLAVechicleSteps extends DriverFactory {
 
     @Given("^Am on DVLA Site$")
     public void amOnDVLASite() {
-
-        List<VehicleDetail> vechicleDetails1 = csvService.getVechicleDetails("src/main/resources/TestVehicle");
+         List<VehicleDetail> vechicleDetails1 = csvService.getVechicleDetails("src/main/resources/TestVehicle");
         List<VehicleDetail> vechicleDetails12 = excelService.getVechicleDetails("src/main/resources/TestVehicle");
 
         driver.get(PAGE_URL);
@@ -47,7 +46,14 @@ public class DVLAVechicleSteps extends DriverFactory {
         VehicleEnquiryPage vehicleEnquiryPage = new VehicleEnquiryPage(driver);
         VehicleDetailsPage vehicleDetailsPage = new VehicleDetailsPage(driver);
 
-        for (VehicleDetail singleCar : vechicleDetails1) {
+//        for (VehicleDetail singleCar : vechicleDetails1) {
+//            vehicleEnquiryPage.enterRegNumber(singleCar.getRegNumber());
+//            vehicleEnquiryPage.clickContinue();
+//            vehicleDetailsPage.validate(singleCar.getMake(), singleCar.getColor());
+//            vehicleDetailsPage.searchAgain();
+//        }
+
+        for (VehicleDetail singleCar : vechicleDetails12) {
             vehicleEnquiryPage.enterRegNumber(singleCar.getRegNumber());
             vehicleEnquiryPage.clickContinue();
             vehicleDetailsPage.validate(singleCar.getMake(), singleCar.getColor());
