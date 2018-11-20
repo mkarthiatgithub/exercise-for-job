@@ -6,6 +6,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * This class reads all csv files in given folder and produces vechcile details list
+ */
 public class CSVReader implements FileService {
 
     private final SupportedMIME supportedMIME = SupportedMIME.CSV;
@@ -34,6 +37,6 @@ public class CSVReader implements FileService {
 
     @Override
     public List<FileInformation> getFileInfo(String dirName) {
-        return SupportedFiles.setListOfSupportedFiles(dirName, supportedMIME);
+        return SupportedFiles.getListOfSupportedFiles(dirName, supportedMIME);
     }
 }

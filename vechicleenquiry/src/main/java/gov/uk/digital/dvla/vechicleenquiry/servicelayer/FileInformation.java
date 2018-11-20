@@ -10,16 +10,16 @@ public class FileInformation {
         return this.filename;
     }
 
+    public void setFileName(String fileName) {
+        this.filename = fileName;
+    }
+
     public long getSize() {
         return fileSize;
     }
 
     public String getExt() {
         return fileExt;
-    }
-
-    public void setFileName(String fileName) {
-        this.filename = fileName;
     }
 
     public void setExt(String ext) {
@@ -30,12 +30,12 @@ public class FileInformation {
         this.fileSize = fileSize;
     }
 
-    public void setMimeType(String type) {
-        this.mimeType = type;
-    }
-
     public String getMimeType() {
         return mimeType;
+    }
+
+    public void setMimeType(String type) {
+        this.mimeType = type;
     }
 }
 

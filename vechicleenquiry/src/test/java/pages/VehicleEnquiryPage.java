@@ -1,6 +1,5 @@
 package pages;
 
-import com.google.inject.Inject;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,11 +11,9 @@ import org.openqa.selenium.support.PageFactory;
  * Entry point for the test to input Car details
  */
 public class VehicleEnquiryPage {
+    public String button = "#content > form > div > div > div.form-group.no-bottom > fieldset > button";
     private Logger log = Logger.getLogger(VehicleEnquiryPage.class);
     private WebDriver driver;
-
-
-    public String button = "#content > form > div > div > div.form-group.no-bottom > fieldset > button";
     //Locators
     @FindBy(how = How.CSS, using = "#Vrm")
     private WebElement regNo;

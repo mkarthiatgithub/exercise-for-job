@@ -9,20 +9,21 @@ import java.io.FileInputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-import static gov.uk.digital.dvla.vechicleenquiry.servicelayer.FileService.SupportedFiles.setListOfSupportedFiles;
+import static gov.uk.digital.dvla.vechicleenquiry.servicelayer.FileService.SupportedFiles.getListOfSupportedFiles;
 
+/**
+ * This class read XLSX file with Sheet1 as sheet name and produces vechicle details
+ */
 public class ExcelReader implements FileService {
 
-    private final SupportedMIME supportedMIME = SupportedMIME.XLSX;
     private static final Logger logger = LoggerFactory.getLogger(ExcelReader.class);
     private static XSSFSheet ExcelSheet;
-
     private static XSSFWorkbook ExcelWBook;
-
+    private final SupportedMIME supportedMIME = SupportedMIME.XLSX;
 
     @Override
     public List<FileInformation> getFileInfo(String dirName) {
-        return setListOfSupportedFiles(dirName, supportedMIME);
+        return getListOfSupportedFiles(dirName, supportedMIME);
     }
 
     @Override
@@ -65,7 +66,7 @@ public class ExcelReader implements FileService {
             vehicleData[0] = (ExcelSheet.getRow(rowNum).getCell(0).getStringCellValue());
             vehicleData[1] = (ExcelSheet.getRow(rowNum).getCell(1).getStringCellValue());
             vehicleData[2] = (ExcelSheet.getRow(rowNum).getCell(2).getStringCellValue());
-            return new VehicleDetail(vehicleData[0],vehicleData[1],vehicleData[2]);
+            return new VehicleDetail(vehicleData[0], vehicleData[1], vehicleData[2]);
 
         } catch (Exception e) {
             logger.error(e.getMessage());

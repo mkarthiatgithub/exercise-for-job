@@ -46,11 +46,11 @@ public class DriverFactory {
         driver = null;
     }
 
-    void setImplicitWait(long waitTime) {
-        DriverFactory.implicitWaitTimeInSeconds = waitTime;
-    }
-
     long getImplicitWait() {
         return implicitWaitTimeInSeconds;
+    }
+
+    void setImplicitWait(long waitTime) {
+        DriverFactory.implicitWaitTimeInSeconds = waitTime;
     }
 }
